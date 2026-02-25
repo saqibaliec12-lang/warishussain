@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajaz Hussain | Tech Innovator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-color: #1a1a1a;
+            color: white;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: #111;
+            border-bottom: 2px solid #333;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-weight: bold;
+            letter-spacing: 5px;
+            font-size: 20px;
+            border: 2px solid white;
+            padding: 5px 15px;
+        }
+
+        .hero {
+            height: 90vh;
+            background: linear-gradient(to right, rgba(0,0,0,0.9) 20%, rgba(0,0,0,0) 80%), 
+                        url('https://tse3.mm.bing.net/th/id/OIP.xOCL3ovausS_ifCdlmR9jgHaHa?rs=1&pid=ImgDetMain&o=7&rm=3');
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 0 8%;
+        }
+
+        .typing-container {
+            display: inline-block;
+        }
+
+        .typing-wrapper {
+            overflow: hidden; 
+            border-right: 4px solid white; 
+            white-space: nowrap; 
+            margin: 0;
+            letter-spacing: 2px;
+            font-size: 3.5rem;
+            font-weight: 700;
+            width: 0;
+            animation: typing 3s steps(21, end) forwards, blink-caret .75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: white; }
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 500px;
+            line-height: 1.6;
+            margin: 20px 0 30px 0;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+
+        .btn {
+            border: 2px solid white;
+            padding: 12px 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+            background: rgba(0,0,0,0.6);
+        }
+
+        .btn:hover {
+            background: white;
+            color: black;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2px;
+            background-color: #333;
+        }
+
+        .grid-item {
+            padding: 60px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 400px;
+        }
+
+        .grid-item h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid rgba(255,255,255,0.5);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .grid-item p {
+            font-size: 0.9rem;
+            line-height: 1.8;
+            text-transform: uppercase;
+        }
+
+        .bg-blue { background-color: #8fa9dc; }
+        .bg-green { background-color: #a9d18e; }
+        .bg-cyan { background-color: #70adce; }
+        .bg-purple { background-color: #9381bd; }
+        .bg-orange { background-color: #e6a07e; }
+        .bg-yellow { background-color: #dbbc7f; }
+        .bg-navy { background-color: #2f3e5b; }
+        .bg-dark-green { background-color: #729c7a; }
+
+        @media (max-width: 768px) {
+            .typing-wrapper { font-size: 1.8rem; }
+            .hero { 
+                align-items: center; 
+                text-align: center;
+                background-position: center top; 
+            }
+            .hero p { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">AJAZ HUSSAIN</div>
+        <div class="menu-btn">MENU ☰</div>
+    </header>
+
+   
+    <section class="hero">
+        <div class="typing-container">
+            <div class="line line-1">AJAZ</div>
+            <div class="line line-2">HUSSAIN</div>
+            <div class="line line-3">OFFICIAL</div>
+        </div>
+        <p>Tech-Messiah for the disabled, Innovating Brain-Computer Interfaces to change lives through EEG technology.</p>
+        <a href="#" class="btn">DISCOVER INNOVATION →</a>
+    </section>
+
+    <div class="grid-container">
+        <div class="grid-item bg-blue">
+            <h2>EEG Wheelchair</h2>
+            <p>A revolutionary device for crippled persons. It captures beta waves or EEG signals from the brain to drive movement without hands.</p>
+        </div>
+
+        <div class="grid-item bg-green">
+            <h2>BCI Technology</h2>
+            <p>Brain Computer Interface allows control over gadgets through attention. Aiming to make high-end tech affordable.</p>
+        </div>
+
+        <div class="grid-item bg-cyan">
+            <h2>F1 Tech Club</h2>
+            <p>Founded by Ajaz and Naveed to promote robotics in Kashmir, connecting students with global tech experts.</p>
+        </div>
+
+        <div class="grid-item bg-purple">
+            <h2>Smart Mapping</h2>
+            <p>The wheelchair creates a virtual map autonomously, allowing users to reach spots through a smart interface.</p>
+        </div>
+
+        <div class="grid-item bg-orange">
+            <h2>Medical Ethics</h2>
+            <p>Innovating with doctors to ensure patient safety and effective bio-mechatronic solutions.</p>
+        </div>
+
+        <div class="grid-item bg-yellow">
+            <h2>Future Vision</h2>
+            <p>"Medical breakthroughs must be available to all." - A mission for affordable healthcare tech.</p>
+        </div>
+
+        <div class="grid-item bg-navy">
+            <h2>NIT Srinagar</h2>
+            <p>Ajaz is a bio-mechatronic expert incubated at NIT Srinagar, researching advanced BCI systems.</p>
+        </div>
+
+        <div class="grid-item bg-dark-green">
+            <h2>Contact</h2>
+            <p>FOR COLLABORATIONS:<br><strong>AJAZ@F1TECHCLUB.COM</strong></p>
+        </div>
+    </div>
+
+</body>
+</html>
